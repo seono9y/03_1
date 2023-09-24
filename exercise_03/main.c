@@ -7,18 +7,17 @@
 
 #include <stdio.h>
 
-int main(int argc, char *argv[]) {
-    int a;
-    int b;
+
+int main(void) {
+    char character;
     
-    printf("분자를 입력하세요 : ");
-    scanf("%d",&a);
+    printf("알파벳 문자를 입력하세요: ");
+    scanf(" %c", &character);
+
+   
+    character = character + 1;
     
-    printf("분모를 입력하세요 : ");
-    scanf("%d",&b);
-    
-    printf("나누기의 결과는 %0.6f 입니다.",(float)a/b);
+    printf("다음 문자는: %c\n", character);
     
     return 0;
-    
 }
